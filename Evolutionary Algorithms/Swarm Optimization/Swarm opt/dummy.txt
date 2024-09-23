@@ -1,0 +1,53 @@
+#
+import pandas as pd
+import math
+import numpy as np
+import random
+
+from scipy import spatial
+#
+# data=pd.read_csv("large.csv")
+# citeis_points=data.values.tolist()
+# citeis_points=np.array(citeis_points)
+# def generate_population(city_array, population_size):
+#     num_cities = city_array.shape[0]
+#     population = []
+#
+#     while len(population) < population_size:
+#         new_order = np.random.permutation(num_cities)
+#         new_array = city_array[new_order, :]
+#         if not any(np.array_equal(new_array, pop) for pop in population):
+#             population.append(new_array)
+#
+#     return np.asarray(population)
+#
+#
+# population=generate_population(citeis_points,10)
+# def fitness(city):
+#    city_distances = 0
+#    for i in range(len(city)):
+#             x_1 ,y_1= city[i]
+#             x_2, y_2 =city[((i+1)%len(city))]
+#             dist= math.sqrt((x_1-x_2) ** 2 + (y_1-y_2) ** 2)
+#             city_distances+=dist
+#
+#    return city_distances
+# #
+#
+#
+#
+#
+#before generating the population
+# def single_point_crossover(parent1, parent2):
+#     # Perform single-point crossover
+#     crossover_point = np.random.randint(1, len(parent1))
+#     child1 = np.concatenate((parent1[:crossover_point], parent2[crossover_point:]))
+#     child2 = np.concatenate((parent2[:crossover_point], parent1[crossover_point:]))
+#     return child1, child2
+#
+# def mutation(tour):
+#     # Perform mutation (swap two cities)
+#     idx1, idx2 = np.random.choice(len(tour), 2, replace=False)
+#     tour[idx1], tour[idx2] = tour[idx2], tour[idx1]
+#     return tour
+
